@@ -1,0 +1,273 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+}
+
+body {
+    color: white;
+}
+
+#background {
+    background: black url("img/bg.png");
+    background-size: 100% 200%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+#sun {
+    background: url("img/sun.png");
+    background-size: 200% 200%;
+    background-position: 120% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-attachment: fixed;
+
+}
+
+#moon {
+    background: url("img/moon.png");
+    background-size: 200% 200%;
+    background-position: 5% 5%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-attachment: fixed;
+}
+
+.container {
+    align-items: center;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 100vh;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-top: none;
+    border-bottom: none;
+}
+
+.glow {
+    box-shadow: 0px 0px 20px 1px #0ff;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+#jobDrop {
+    background: none;
+    color: white;
+    border-color: white;
+}
+
+#classDrop {
+    background: none;
+    color: white;
+    border-color: white;
+    margin-bottom: 2%;
+}
+
+option {
+    background: black;
+}
+
+#navi {
+    justify-content: center;
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.pagination > li > a,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    background: none;
+    border-color: white;
+}
+
+    .pagination > li > a:hover,
+    .pagination > li > span:hover tr {
+        box-shadow: 0px 0px 20px 1px white;
+        background: none;
+    }
+
+.naviLightHover > li > a:hover,
+.naviLightHover > li > span:hover tr {
+    box-shadow: 0px 0px 20px 1px black;
+    background: none;
+}
+
+.hoverableDark:hover {
+    box-shadow: 0px 0px 20px 1px white;
+}
+
+.hoverableLight:hover{
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+#tableHeading:hover {
+    background-color: none;
+}
+
+#tableContainer {
+}
+
+#gibmTable {
+    overflow: visible;
+}
+
+.tableDark {
+	color: white;
+}
+
+.tableLight {
+	color: black;
+}
+
+#info {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 2%;
+    padding: 0;
+}
+
+#modeSwitch, #disableParticles {
+    background: none;
+    border-color: white;
+    min-width: 15%;
+}
+
+#modeSwitch:focus, #modeSwitch:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.lightHover:hover {
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+.darkHover:hover {
+    box-shadow: 0px 0px 20px 1px white;
+}
+
+#disableParticles:focus, #disableParticles:active {
+    outline: none;
+    box-shadow: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 10px 10px;
+}
+
+.dividerLight {
+    border-top: 1px solid black;
+}
+
+.dividerDark {
+    border-top: 1px solid white;
+}
+
+.popover-header {
+    color: white;
+    background: black;
+    outline: 1px solid white;
+}
+
+.popover-body {
+    color: white;
+    background: black;
+    outline: 1px solid white;
+}
+
+.currentLessonDark {
+    box-shadow: 0px 0px 20px 1px #0ff;
+}
+
+.currentLessonLight {
+    box-shadow: 0px 0px 20px 1px #00cc00;
+}
+
+.pauseDark {
+    border-top: 3px solid #0ff;
+}
+
+.pauseLight {
+    border-top: 3px solid #00cc00;
+}
+
+.tableBorderDark{
+    border-top: 2px solid transparent;
+}
+
+.tableBorderLight{
+    border-top: 2px solid transparent;
+}
+
+#clock {
+    display: inline;
+    font-size: 40px;
+    border: 1px solid white;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.clockContainer {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.extra {
+    text-align: center;
+}
+
+.spacer {
+    display: inline;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.middlePart {
+    border: 2px solid white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#burger{
+    text-align: center;
+}
+
+.hamburger-light, .hamburger-light::before, .hamburger-light::after {
+    background-color: black;
+}
+
+.hamburger-dark, .hamburger-dark::before, .hamburger-dark::after {
+    background-color: white;
+}
+
+.headerDark{
+    border-bottom: 2px solid white;
+}
+
+.headerLight {
+    border-bottom: 2px solid black;
+}

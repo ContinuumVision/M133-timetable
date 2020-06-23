@@ -1,0 +1,623 @@
+* {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animationLight {
+    animation-name: backgroundPositionToWhite, textToBlack;
+}
+
+.animationDark {
+    animation-name: backgroundPositionToBlack, textToWhite;
+}
+
+.animationLightText {
+    animation-name: textToBlack, borderToBlack;
+}
+
+.animationDarkText {
+    animation-name: textToWhite, borderToWhite;
+}
+
+.animationLightOptions {
+    animation-name: textToBlack, backgroundToWhite;
+}
+
+.animationDarkOptions {
+    animation-name: textToWhite, backgroundToBlack;
+}
+
+.animationRotateOut {
+    animation-name: rotateOut;
+}
+
+.animationRotateIn {
+    animation-name: rotateIn;
+}
+
+.animationDividerDark{
+    animation-name: borderTopToWhite;
+}
+
+.animationDividerLight {
+    animation-name: borderTopToBlack;
+}
+
+.animationLessonDark{
+    animation-name: lessonDark;
+}
+
+.animationLessonLight{
+    animation-name: lessonLight;
+}
+
+.animationLightInfo{
+    animation-name: textToBlack;
+}
+
+.animationDarkInfo{
+    animation-name: textToWhite;
+}
+
+.animatinoPauseLight {
+    animation-name: pauseLight;
+}
+
+.animationPasueDark{
+    animation-name: pauseDark;
+}
+
+.animationContainerDark{
+    animation-name: borderLight;
+}
+
+.animationContainerLight{
+    animation-name: borderDark;
+}
+
+
+@-webkit-keyframes backgroundPositionToWhite {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@-moz-keyframes backgroundPositionToWhite {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes backgroundPositionToWhite {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@-webkit-keyframes backgroundPositionToBlack {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@-moz-keyframes backgroundPositionToBlack {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes backgroundPositionToBlack {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@-webkit-keyframes textToBlack {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@-moz-keyframes textToBlack {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes textToBlack {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@-webkit-keyframes textToWhite {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@-moz-keyframes textToWhite {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes textToWhite {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@-webkit-keyframes borderToBlack {
+    0% {
+        border-color: white;
+    }
+
+    100% {
+        border-color: black;
+    }
+}
+
+@-moz-keyframes borderToBlack {
+    0% {
+        border-color: white;
+    }
+
+    100% {
+        border-color: black;
+    }
+}
+
+@keyframes borderToBlack {
+    0% {
+        border-color: white;
+    }
+
+    100% {
+        border-color: black;
+    }
+}
+
+@-webkit-keyframes borderToWhite {
+    0% {
+        border-color: black;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+@-moz-keyframes borderToWhite {
+    0% {
+        border-color: black;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+@keyframes borderToWhite {
+    0% {
+        border-color: black;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+@-webkit-keyframes rotateOut {
+    0% {
+        background-position: 5% 5%;
+    }
+
+    100% {
+        background-position: 50% 80%;
+    }
+}
+
+@-moz-keyframes rotateOut {
+    0% {
+        background-position: 5% 5%;
+    }
+
+
+    100% {
+        background-position: 120% 50%;
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        background-position: 5% 5%;
+    }
+
+    100% {
+        background-position: 80% 120%;
+    }
+}
+
+@-webkit-keyframes rotateIn {
+    0% {
+        background-position: 120% 50%;
+    }
+
+    100% {
+        background-position: 5% 5%;
+    }
+}
+
+@-moz-keyframes rotateIn {
+    0% {
+        background-position: 120% 50%;
+    }
+
+    100% {
+        background-position: 5% 5%;
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        background-position: 120% 50%;
+    }
+
+    100% {
+        background-position: 5% 5%;
+    }
+}
+
+@-webkit-keyframes backgroundToWhite {
+    0% {
+        background: black;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+@-moz-keyframes backgroundToWhite {
+    0% {
+        background: black;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+@keyframes backgroundToWhite {
+    0% {
+        background: black;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+@-webkit-keyframes backgroundToBlack {
+    0% {
+        background: white;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@-moz-keyframes backgroundToBlack {
+    0% {
+        background: white;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@keyframes backgroundToBlack {
+    0% {
+        background: white;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@-webkit-keyframes borderTopToBlack {
+    0% {
+        border-top-color: white;
+    }
+
+    100% {
+        border-top-color: black;
+    }
+}
+
+@-moz-keyframes borderTopToBlack {
+    0% {
+        border-top-color: white;
+    }
+
+    100% {
+        border-top-color: black;
+    }
+}
+
+@keyframes borderTopToBlack {
+    0% {
+        border-top-color: white;
+    }
+
+    100% {
+        border-top-color: black;
+    }
+}
+
+@-webkit-keyframes borderTopToWhite {
+    0% {
+        border-top-color: black;
+    }
+
+    100% {
+        border-top-color: white;
+    }
+}
+
+@-moz-keyframes borderTopToWhite {
+    0% {
+        border-top-color: black;
+    }
+
+    100% {
+        border-top-color: white;
+    }
+}
+
+@keyframes borderTopToWhite {
+    0% {
+        border-top-color: black;
+    }
+
+    100% {
+        border-top-color: white;
+    }
+}
+
+@-webkit-keyframes lessonLight {
+    0% {
+        box-shadow: 0px 0px 20px 1px #0ff;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 1px #00cc00;
+    }
+}
+
+@-moz-keyframes lessonLight {
+    0% {
+        box-shadow: 0px 0px 20px 1px #0ff;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 1px #00cc00;
+    }
+}
+
+@keyframes lessonLight {
+    0% {
+        box-shadow: 0px 0px 20px 1px #0ff;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 1px #00cc00;
+    }
+}
+
+@-webkit-keyframes lessonDark {
+    0% {
+        box-shadow: 0px 0px 20px 1px #00cc00;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 1px #0ff;
+    }
+}
+
+@-moz-keyframes lessonDark {
+    0% {
+        box-shadow: 0px 0px 20px 1px #00cc00;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 1px #0ff;
+    }
+}
+
+@keyframes lessonDark {
+    0% {
+        box-shadow: 0px 0px 20px 1px #00cc00;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 1px #0ff;
+    }
+}
+
+@-webkit-keyframes pauseLight {
+    0% {
+        border-color: #0ff;
+    }
+
+    100% {
+        border-color: #00cc00;
+    }
+}
+
+@-moz-keyframes pauseLight {
+    0% {
+        border-color: #0ff;
+    }
+
+    100% {
+        border-color: #00cc00;
+    }
+}
+
+@keyframes pauseLight {
+    0% {
+        border-color: #0ff;
+    }
+
+    100% {
+        border-color: #00cc00;
+    }
+}
+
+@-webkit-keyframes pauseDark {
+    0% {
+        border-color: #00cc00;
+    }
+
+    100% {
+        border-color: #0ff;
+    }
+}
+
+@-moz-keyframes pauseDark {
+    0% {
+        border-color: #00cc00;
+    }
+
+    100% {
+        border-color: #0ff;
+    }
+}
+
+@keyframes pauseDark {
+    0% {
+        border-color: #00cc00;
+    }
+
+    100% {
+        border-color: #0ff;
+    }
+}
+
+@-webkit-keyframes borderDark {
+    0% {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@-moz-keyframes borderDark {
+    0% {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes borderDark {
+    0% {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@-webkit-keyframes borderLight {
+    0% {
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@-moz-keyframes borderLight {
+    0% {
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes borderLight {
+    0% {
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+
+

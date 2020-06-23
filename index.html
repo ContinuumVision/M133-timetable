@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--P1.2-->
+    <title>GIBM Stundenplan</title>
+    <!-- Bootstrap css-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	    <!-- Hamburger css-->
+    <link rel="stylesheet" href="hamburgers/dist/hamburgers.css" />
+    <!-- seperate stylesheet for animations-->
+    <link rel="stylesheet" href="./animations.css" />
+    <!-- to make it more bootyful-->
+    <link rel="stylesheet" href="./stylesheet.css" />
+</head>
+<body>
+    <div id="background">
+        <div id="sun"></div>
+        <div id="moon"></div>
+        <div id="particles-js">
+        </div>
+        <div class="container">        
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--P1.3-->
+                    <h1>Timetable</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group inputField">
+                        <label for="jobDrop">Job</label>
+                        <!--P1.4, P3.1-->
+                        <select id="jobDrop" class="custom-select darkHover">
+                            <option>Choose job</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="classDropContainer">
+                <div class="col-sm-12">
+                    <div class="form-group inputField">
+                        <!--P3.2-->
+                        <label for="classDrop">Class</label>
+                        <!--P1.4, P3.1-->
+                        <select id="classDrop" class="custom-select darkHover">
+                            <option>Choose class</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="burger">
+                <button class="hamburger hamburger--collapse is-active" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner hamburger-dark"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="middlePart">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="extra">
+                            <div class="clockContainer"><p id="clock"></p></div>
+                            <button type="button" class="btn btn-primary darkHover" id="modeSwitch" data-toggle="button">Light Mode</button>
+                            <div class="spacer"></div>
+                            <button type="button" class="btn btn-primary darkHover" id="disableParticles" data-toggle="button">Disable Particles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--P3.3, PA.1-->
+                    <ul class="pagination" id="navi">
+                        <li class="page-item">
+                            <a class="page-link" id="prev" aria-label="Previous">
+                                &larr;
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li id="navTooltip" class="page-item" data-toggle="tooltip" data-placement="bottom" title="Back to Today">
+                            <a class="page-link" id="date"></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" id="next" aria-label="Next">
+                                &rarr;
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--P3.4-->
+            <div id="tableContainer">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table table-borderless tableDark" id="gibmTable">
+                            <thead>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <p id="info"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS-->
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- popper js for popover-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/esm/popper.min.js" integrity="sha256-ZgnIK7Tg6/n3WYGRUQOl0TtJ8O56FA5NoT/hJquDJho=" crossorigin="anonymous"></script>
+    <!-- bootstrap compiled js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <!-- Moment js for date/time handling -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!--Particles.js for super fancy background-->
+    <script src="js/particles.min.js"></script>
+    <!--Particles app for super fancy background-->
+    <script src="js/app.js"></script>
+    <!-- js for interaction with gibm api-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
